@@ -4,7 +4,7 @@ from core import views
 app_name='core' # define un espacio de nombre para la aplicacion
 urlpatterns = [
    
-   path('signup/', views.test, name='test'),
+   path('signup/', views.signup, name='signup'),
 
    # urls de vistas
    path('product_list/', views.product_List,name='product_list'),

@@ -16,6 +16,15 @@
         <a href={% url 'home' %}>Inicio</a>
       </li>
       <li>
+        <a href={% url 'core:signup' %}>Signup</a>
+      </li>
+      {% if user.is_authenticated %}
+      <li>
+        <a href={% url 'core:logOut' %}>logOut</a>
+      </li>
+        
+      {% endif%}
+      <li>
         <a href={% url 'core:product_list' %}>Productos</a>
         
       </li>
