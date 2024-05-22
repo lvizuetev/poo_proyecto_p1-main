@@ -15,6 +15,13 @@ def home(request):
     }
     return render(request,'core/home.html',data)
 
+def test(request):
+    data = {
+        "title1":"Autor | TeacherCode",
+        "title2":"Super Mercado Economico"
+    }
+    return render(request,'core/signup.html',data)
+
   #  return HttpResponse(f"<h1>{data['title2']}<h1>\
   #                        <h2>Le da la Bienvenida  a su selecta clientela</h2>")
   #  products = ["aceite","coca cola","embutido"]
